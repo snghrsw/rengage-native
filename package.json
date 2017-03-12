@@ -1,5 +1,5 @@
 {
-  "name": "ReactNativeTS",
+  "name": "rengage-native",
   "version": "0.0.3",
   "private": true,
   "scripts": {
@@ -12,14 +12,16 @@
   },
   "dependencies": {
     "react": "^15.4.2",
+    "typescript": "^2.1.5",
     "react-native": "0.41.2",
     "react-native-button": "^1.8.2"
   },
   "devDependencies": {
+    "@types/react": "^15.0.16",
+    "@types/react-native": "^0.42.5",
     "react-native-sm-transformer": "^1.0.2",
     "rimraf": "^2.6.0",
     "tslint": "^4.4.2",
-    "typescript": "^2.1.5",
     "typings": "^2.1.0"
   }
 }

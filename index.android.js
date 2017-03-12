@@ -1,6 +1,6 @@
 'use strict'
 
-import { AppRegistry } from 'react-native'
 import App from './build'
+import { AppRegistry } from 'react-native'
 
-AppRegistry.registerComponent('ReactNativeTS', () => App)
+AppRegistry.registerComponent('RengageNative', () => App)
