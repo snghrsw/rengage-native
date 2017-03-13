@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev:android": "npm-run-all --parallel build:watch android",
-    "start": "node node_modules/react-native/local-cli/cli.js start --transformer node_modules/react-native-sm-transformer",
-    "android": "adb reverse tcp:8081 tcp:8081 && node node_modules/react-native/local-cli/cli.js run-android",
-    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
-    "prebuild": "node node_modules/.bin/rimraf build",
+    "start": "react-native start --transformer node_modules/react-native-sm-transformer",
+    "android": "adb reverse tcp:8081 tcp:8081 && react-native run-android",
+    "ios": "react-native run-ios",
+    "prebuild": "rimraf build",
     "build": "tsc",
     "build:watch": "tsc -w"
   },
