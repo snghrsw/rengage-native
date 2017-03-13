@@ -3,12 +3,13 @@
   "version": "0.0.3",
   "private": true,
   "scripts": {
-    "postinstall": "node node_modules/typings/dist/bin.js install",
-    "start": "node node_modules/react-native/local-cli/cli.js start --transformer node_modules/react-native-sm-transformer --skipflow",
+    "dev:android": "npm-run-all --parallel build:watch android",
+    "start": "node node_modules/react-native/local-cli/cli.js start --transformer node_modules/react-native-sm-transformer",
     "android": "adb reverse tcp:8081 tcp:8081 && node node_modules/react-native/local-cli/cli.js run-android",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "prebuild": "node node_modules/.bin/rimraf build",
-    "build": "tsc"
+    "build": "tsc",
+    "build:watch": "tsc -w"
   },
   "dependencies": {
     "react": "^15.4.2",
